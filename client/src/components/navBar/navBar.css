@@ -1,0 +1,47 @@
+.containerNavBar{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    background-color: rgb(56, 55, 55);
+    color: white;
+    height: 4rem;
+}
+.enlaces{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.itemEnlace{
+    text-decoration: none;
+}
+
+.claseActiva{
+    background-color: white;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    color: black;
+}
+.claseInactiva{
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    color: white;
+}
+.itemEnlace:hover{
+    background-color: white;
+    color: black;
+}
+
+@media(max-width: 800px){
+    .claseActiva{
+        border-radius: 1rem;
+    }
+    .claseInactiva{
+        border-radius: 1rem;
+    }
+}
